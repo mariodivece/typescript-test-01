@@ -1,0 +1,14 @@
+﻿<div class="col-md-12">
+
+    <div ng-controller="ShoppingItemsController as ctrl">
+        <div ng-repeat="item in items">
+            <span ng-bind="item.Name"></span>
+            <span ng-bind="item.Description"></span>
+            <span ng-bind="item.Price | currency"></span>
+            <br />
+            Only <span ng-bind="item.Stock"></span> left in stock.
+            <a class="btn btn-success btn-sm" href="/add">Buy Now</a>
+            <small>Last Updated: <span ng-bind="item.LastModified"></span> UTC</small>
+        </div>
+    </div>
+</div>
