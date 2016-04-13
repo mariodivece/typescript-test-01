@@ -150,8 +150,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="wwwroot\css\game.css" />
     <Content Include="wwwroot\favicon.ico" />
+    <Content Include="wwwroot\game.html" />
     <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\scripts\vendor\babylon.2.3.js" />
     <Content Include="wwwroot\views\home.html" />
     <None Include="sqlite3.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -163,10 +166,11 @@
     <TypeScriptCompile Include="wwwroot\scripts\definitions\angularjs\angular-resource.d.ts" />
     <TypeScriptCompile Include="wwwroot\scripts\definitions\angularjs\angular-route.d.ts" />
     <TypeScriptCompile Include="wwwroot\scripts\definitions\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="wwwroot\scripts\definitions\babylonjs\babylon.2.3.d.ts" />
     <TypeScriptCompile Include="wwwroot\scripts\definitions\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="wwwroot\scripts\game.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\partials\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
